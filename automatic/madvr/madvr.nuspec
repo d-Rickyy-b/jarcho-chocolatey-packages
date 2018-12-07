@@ -4,7 +4,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>madvr</id>
-    <version>0.92.14</version>
+    <version>0.92.17</version>
     <title>madVR</title>
     <packageSourceUrl>https://github.com/Jarcho/chocolatey-packages/tree/master/automatic/madvr/</packageSourceUrl>
     <iconUrl>http://cdn.rawgit.com/Jarcho/chocolatey-packages/dd440ade9924a549ff643ac7f3fdcd2f61d67b2d/icons/madvr.png</iconUrl>
