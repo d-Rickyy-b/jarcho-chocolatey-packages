@@ -22,7 +22,7 @@ environment:
   # Github token to commit pushed packages to repository
   github_user_repo: Jarcho/chocolatey-packages
   github_api_key:
-    secure: kF4k9PfCEm4vLarmOmd5ujXY/VOiI25QNFtmpmBuCJJyeYwiqXPr4SNugfNRYNoc
+    secure: PUANbxn/ow7IatafIjl4Wdy0eUKOFmLz58wOP4y3+bUZ3bG8EnB3ZqRd44rtnzoM
 
 
   # Mail credentials - for error notifications
