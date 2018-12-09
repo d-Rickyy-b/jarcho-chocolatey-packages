@@ -26,13 +26,13 @@ environment:
 
 
   # Mail credentials - for error notifications
-  # mail_user:
-  #   secure: YOUR_EMAIL_ACCOUNT_HERE_ENCRYPTED_STRING
-  # mail_pass:
-  #   secure: YOUR_EMAIL_PASSWORD_HERE_ENCRYPTED_STRING
-  # mail_server: smtp.gmail.com
-  # mail_port: 587
-  # mail_enablessl: true
+  mail_user:
+    secure: /fXCoAzjTk+q6DTx1XLtq09jJ03F4x+Kvu7WGK0Pe74=
+#   mail_pass:
+#     secure: JC7w6W3QEkECYKfw1uucIZ2tZZRkzkhitew/NRBdWHM=
+#   mail_server: smtp.gmail.com
+#   mail_port: 587
+#   mail_enablessl: true
 
   # ID of the gist used to save run results - create a gist under the github_user (secret or not) and grab the id - https://gist.github.com/name/id
   # Optional, leave empty to create anonymous gist
