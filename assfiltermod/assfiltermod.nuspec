@@ -6,7 +6,7 @@
     <id>assfiltermod</id>
     <version>0.4</version>
     <title>AssFilterMod</title>
-    <packageSourceUrl>https://github.com/Jarcho/chocolatey-packages/tree/master/automatic/assfiltermod</packageSourceUrl>
+    <packageSourceUrl>https://github.com/Jarcho/chocolatey-packages/tree/master/assfiltermod</packageSourceUrl>
     <owners>Jason Newcomb</owners>
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
