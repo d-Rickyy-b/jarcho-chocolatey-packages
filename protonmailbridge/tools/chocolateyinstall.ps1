@@ -6,7 +6,7 @@ $packageArgs = @{
   silentArgs     = '/quiet'
   validExitCodes = @(0)
   url            = 'https://protonmail.com/download/Bridge-Installer.exe'
-  checksum       = '3F4589757E2BC22AD59E983913D420C20CADB0CBC4F9630D64F121415D7D924F'
+  checksum       = 'C1E8766C3212A83885D5717979D66FDD3C00F492A0D03DB8DF56850FE96DDECF'
   checksumType   = 'sha256'
 }
 
