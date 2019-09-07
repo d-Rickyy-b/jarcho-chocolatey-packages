@@ -4,7 +4,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>protonmailbridge</id>
-    <version>1.2.1</version>
+    <version>1.2.2</version>
     <title>ProtonMail Bridge</title>
     <packageSourceUrl>https://github.com/Jarcho/chocolatey-packages/tree/master/protonmailbridge/</packageSourceUrl>
     <iconUrl>https://raw.githubusercontent.com/Jarcho/chocolatey-packages/43dda0b49514396e66b487a5faf1e6aaec94ace2/protonmailbridge/icon.png</iconUrl>
