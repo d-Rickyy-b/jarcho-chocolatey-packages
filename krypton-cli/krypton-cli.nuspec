@@ -7,6 +7,7 @@
     <version>2.4.15.3</version>
     <title>Krypton Developer Tools</title>
     <packageSourceUrl>https://github.com/Jarcho/chocolatey-packages/tree/master/krypton-cli</packageSourceUrl>
+    <iconUrl>https://rawcdn.githack.com/Jarcho/chocolatey-packages/16776c89ff4ab34a16c1df5385701e04b6872269/krypton-cli/icon.png</iconUrl>
     <owners>Jason Newcomb</owners>
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
