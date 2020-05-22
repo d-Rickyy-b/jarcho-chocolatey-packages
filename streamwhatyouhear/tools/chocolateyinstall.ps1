@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop';
-$url32 = 'https://github.com/StreamWhatYouHear/SWYH/releases/download/1.4.16069.0/SWYH_1.4.16069.exe'
-$checksum32 = '547756D4BB7E02EA72A0B91AFEC457AD12D334B519A39116FA1D2503700BDE18'
+$url32 = 'https://github.com/StreamWhatYouHear/SWYH/releases/download/1.5.0/SWYH_1.5.0.exe'
+$checksum32 = '267f72ff5ccb056855574a1eb9b52d7916a3057b79f687cd5e1cc0c113bbe9ca'
 
 $packageArgs = @{
   packageName    = 'streamwhatyouhear'
