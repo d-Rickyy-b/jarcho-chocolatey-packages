@@ -1,5 +1,14 @@
 ﻿$ErrorActionPreference = 'Stop';
 
+$toolsPath = Split-Path $MyInvocation.MyCommand.Definition
+
+$args = @(
+  '-addstore'
+  'TrustedPublisher'
+  "$(Resolve-Path $toolsPath)\openvpn.cer"
+)
+Start-ChocolateyProcessAsAdmin -ExeToRun 'certutil' -Statements $args
+
 $packageArgs = @{
   packageName    = 'nextdns'
   fileType       = 'exe'
