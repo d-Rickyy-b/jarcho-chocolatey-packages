@@ -2,12 +2,10 @@
 
 $toolsPath = Split-Path $MyInvocation.MyCommand.Definition
 
-$args = @(
-  '-addstore'
-  'TrustedPublisher'
-  "$(Resolve-Path $toolsPath)\openvpn.cer"
-)
-Start-ChocolateyProcessAsAdmin -ExeToRun 'certutil' -Statements $args
+$cert = Get-ChildItem Cert:\CurrentUser\TrustedPublisher -Recurse | Where-Object { $_.Thumbprint -eq '5E66E0CA2367757E800E65B770629026E131A7DC' }
+if (!$cert) {
+    Start-ChocolateyProcessAsAdmin "certutil -addstore 'TrustedPublisher' '$toolsPath\openvpn.cer'"
+}
 
 $packageArgs = @{
   packageName    = 'nextdns'
