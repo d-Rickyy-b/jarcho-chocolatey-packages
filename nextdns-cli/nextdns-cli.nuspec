@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>nextdns-cli</id>
-    <version>1.5.8</version>
+    <version>1.6.4</version>
     <title>NextDNS CLI</title>
     <packageSourceUrl>https://github.com/Jarcho/chocolatey-packages/tree/master/nextdns-cli/</packageSourceUrl>
     <iconUrl>https://rawcdn.githack.com/Jarcho/chocolatey-packages/cd9e791591743e1551d9d1a5f8d773bd6bd6fd20/nextdns/icon.png</iconUrl>
