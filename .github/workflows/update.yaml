@@ -1,0 +1,28 @@
+on:
+  schedule:
+    - cron: '0 0 * * *'
+
+name: Check for updates
+
+jobs:
+  update:
+    name: Update
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout sources
+        uses: actions/checkout@v2
+
+      - name: Choco install updater
+        uses: crazy-max/ghaction-chocolatey@v1
+        with:
+          args: install chocolateypackageupdater -y
+
+      - name: Update
+        run: .\update_all.ps1
+        shell: powershell
+        env:
+          api_key: ${{ secrets.choco_api_key }}
+          github_user_repo: ${{ github.repository }}
+          github_api_key: ${{ secrets.GITHUB_TOKEN }}
+          au_Push: 'true'
