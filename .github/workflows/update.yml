@@ -1,8 +1,8 @@
+name: Update check
+
 on:
   schedule:
     - cron: '0 0 * * *'
-
-name: Update check
 
 jobs:
   update:
@@ -16,10 +16,12 @@ jobs:
       - name: Choco install updater
         uses: crazy-max/ghaction-chocolatey@v1
         with:
-          args: install chocolateypackageupdater -y
+          args: install au
 
       - name: Update
-        run: .\update_all.ps1
+        run: |
+          refreshenv
+          .\update_all.ps1
         shell: powershell
         env:
           api_key: ${{ secrets.choco_api_key }}
