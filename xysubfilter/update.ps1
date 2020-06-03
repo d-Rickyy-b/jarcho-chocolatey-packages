@@ -2,7 +2,7 @@ import-module au
 
 function global:au_GetLatest {
   $download_page = Invoke-WebRequest -Uri 'https://github.com/Cyberbeing/xy-VSFilter/releases' -UseBasicParsing
-  $url32     = $download_page.links | ? href -match '_x32.zip$' | select -First 1 -expand href
+  $url32     = $download_page.links | ? href -match '_x86.zip$' | select -First 1 -expand href
   $url64     = $download_page.links | ? href -match '_x64.zip$' | select -First 1 -expand href
   (Split-Path -Path "$url32" -Leaf) -match 'XySubFilter_(?<version>.*)_'
   return @{
