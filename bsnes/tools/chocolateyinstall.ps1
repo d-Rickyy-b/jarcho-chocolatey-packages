@@ -12,4 +12,7 @@ $packageArgs = @{
 }
 
 Install-ChocolateyZipPackage @packageArgs
-Remove-Item $(Join-Path $(Join-Path "$toolsDir", 'bsnes_v115-windows'), 'settings.bml')
+
+$installDir = "$(Join-Path $toolsDir 'bsnes_v115-windows')"
+Remove-Item "$(Join-Path $installDir 'settings.bml')"
+New-Item "$(Join-Path $installDir 'bsnes.exe.gui')" -type file -force | Out-Null
