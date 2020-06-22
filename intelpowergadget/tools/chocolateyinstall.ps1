@@ -10,7 +10,7 @@ $installArgs = @{
     checksum       = $checksum32
     checksumType   = 'sha256'
     silentArgs     = '/quiet /norestart ALLUSERS=1'
-    validExitCodes = @(0, 3010, 1641) #1603
+    validExitCodes = @(0, 3010, 1641, 1603)
 }
 
 Install-ChocolateyPackage @installArgs
