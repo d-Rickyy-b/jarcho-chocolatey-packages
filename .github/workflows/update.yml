@@ -2,7 +2,7 @@ name: Update check
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: "0 0 * * *"
 
 jobs:
   update:
@@ -21,10 +21,13 @@ jobs:
       - name: Update
         run: |
           refreshenv
+          git config --global user.email "chocolatey@realdimensions.net"
+          git config --global user.name "Chocolatey"
+          git config --global core.safecrlf false
           .\update_all.ps1
         shell: powershell
         env:
           api_key: ${{ secrets.choco_api_key }}
           github_user_repo: ${{ github.repository }}
           github_api_key: ${{ secrets.GITHUB_TOKEN }}
-          au_Push: 'true'
+          au_Push: "true"
