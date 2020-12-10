@@ -18,7 +18,9 @@
     <projectSourceUrl>https://github.com/Blitzker/assfiltermod</projectSourceUrl>
     <bugTrackerUrl>https://github.com/Blitzker/assfiltermod/issues</bugTrackerUrl>
     <tags>assfiltermod</tags>
-    <description>AssFilter is an Open-source DirectShow subtitle renderer based on libass and the SubRenderIntf interfaces.</description>
+    <summary>AssFilterMod is a fork of AssFilter, a high-quality DirectShow subtitle renderer based on libass.</summary>
+    <description>AssFilter is a DirectShow subtitle renderer based on libass. AssFilter doesn't render the subtitles directly onto the video, but instead communicates directly with the video renderer through the ISubRenderProvider interface. This process allow the video renderer to do what it wants with the subtitles.</description>
+    <releaseNotes>https://github.com/Blitzker/assfiltermod/blob/master/changelog.txt</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
