@@ -5,7 +5,7 @@ function global:au_GetLatest {
     $url32 = $download_page.links | ? href -Match 'IntelPowerGadget_(?<version>.*)\.msi' | select -First 1 -expand href
     return @{
         Version = $matches['version']
-        URL32   = $url32
+        URL32   = "https://software.intel.com$url32"
     }
 }
 
