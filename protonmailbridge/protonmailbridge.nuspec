@@ -4,7 +4,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>protonmailbridge</id>
-    <version>1.2.7</version>
+    <version>1.5.4</version>
     <title>ProtonMail Bridge</title>
     <packageSourceUrl>https://github.com/Jarcho/chocolatey-packages/tree/master/protonmailbridge/</packageSourceUrl>
     <iconUrl>https://rawcdn.githack.com/Jarcho/chocolatey-packages/43dda0b49514396e66b487a5faf1e6aaec94ace2/protonmailbridge/icon.png</iconUrl>
@@ -21,7 +21,8 @@
     <bugTrackerUrl>https://github.com/ProtonMail/proton-bridge/issues</bugTrackerUrl>
     <tags>protonmail email imap smtp</tags>
     <summary>IMAP &amp; SMTP bridge for ProtonMail.</summary>
-    <description>The ProtonMail Bridge is an application for paid users that runs on your computer in the background and seamlessly encrypts and decrypts your mail as it enters and leaves your computer. It allows for full integration of your ProtonMail account with any program that supports IMAP and SMTP such as Microsoft Outlook, Mozilla Thunderbird and Apple Mail.</description>
+    <description><![CDATA[The ProtonMail Bridge is an application for paid users that runs on your computer in the background and seamlessly encrypts and decrypts your mail as it enters and leaves your computer. It allows for full integration of your ProtonMail account with any program that supports IMAP and SMTP such as Microsoft Outlook, Mozilla Thunderbird and Apple Mail.
+]]></description>
 
     <dependencies>
       <dependency id="kb2919355" />
