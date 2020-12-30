@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>doomsday</id>
-    <version>2.2.2</version>
+    <version>2.3.0</version>
     <title>Doomsday Engine</title>
     <packageSourceUrl>https://github.com/Jarcho/chocolatey-packages/tree/master/doomsday/</packageSourceUrl>
     <iconUrl>https://rawcdn.githack.com/Jarcho/chocolatey-packages/40b73610f57da84c9be21966f84936fd7e8edce2/doomsday/icon.png</iconUrl>
@@ -32,7 +32,8 @@ Features:
 - **Graphics** Particle effects and dynamic lights. Bloom and vignette effects. Geometry-based ambient occlusion. Supports 3D models for objects (FBX, MD5) and sky boxes. Upscaling texture filter. Stereoscopic rendering modes.
 - **Audio** 3D sound effects and reverb (FMOD plugin). Supports music add-ons (MP3) and FluidSynth for high-quality MIDI music (Unix only).
 - **Multiplayer** Automatic discovery of LAN servers. Master server for public games. Tool for running servers in the background.
-- **Technology** Portable code built on Qt 5 and OpenGL.]]></description>
+- **Technology** Portable code built on Qt 5 and OpenGL.
+]]></description>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
