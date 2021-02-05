@@ -4,7 +4,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>doomsday</id>
-    <version>2.3.0</version>
+    <version>2.3.1</version>
     <title>Doomsday Engine</title>
     <packageSourceUrl>https://github.com/Jarcho/chocolatey-packages/tree/master/doomsday/</packageSourceUrl>
     <iconUrl>https://rawcdn.githack.com/Jarcho/chocolatey-packages/40b73610f57da84c9be21966f84936fd7e8edce2/doomsday/icon.png</iconUrl>
