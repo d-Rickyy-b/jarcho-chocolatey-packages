@@ -16,6 +16,8 @@
     <copyright>2020 Intel WerWolv</copyright>
     <tags>imhex hex editor dissassembler file analyzer</tags>
     <summary>A Hex Editor for Reverse Engineers, Programmers and people that value their eye sight when working at 3 AM</summary>
+    <licenseUrl>https://raw.githubusercontent.com/WerWolv/ImHex/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[A Hex Editor for Reverse Engineers, Programmers and people that value their eye sight when working at 3 AM.
 
 ## Features
