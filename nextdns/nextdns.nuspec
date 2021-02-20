@@ -4,7 +4,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>nextdns</id>
-    <version>1.0.12</version>
+    <version>2.0.1</version>
     <title>NextDNS</title>
     <packageSourceUrl>https://github.com/Jarcho/chocolatey-packages/tree/master/nextdns/</packageSourceUrl>
     <iconUrl>https://rawcdn.githack.com/Jarcho/chocolatey-packages/cd9e791591743e1551d9d1a5f8d773bd6bd6fd20/nextdns/icon.png</iconUrl>

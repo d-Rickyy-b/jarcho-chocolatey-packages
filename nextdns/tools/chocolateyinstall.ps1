@@ -8,13 +8,13 @@ if (!$cert) {
 }
 
 $packageArgs = @{
-  packageName    = 'nextdns'
-  fileType       = 'exe'
-  silentArgs     = '/S'
-  validExitCodes = @(0)
-  url            = 'https://nextdns.io/download/windows/stable'
-  checksum       = '2ea1c11845c75a05fd2769a168bbe227301572a79b8fbbc43522343998c9cb21'
-  checksumType   = 'sha256'
+    packageName    = 'nextdns'
+    fileType       = 'exe'
+    silentArgs     = '/S'
+    validExitCodes = @(0)
+    url            = 'https://nextdns.io/download/windows/stable'
+    checksum       = '7e6f1f73fd290083ff31202287c68dbc80865bb64f7bc58e9fd0b3e14c211ce7'
+    checksumType   = 'sha256'
 }
 
 Install-ChocolateyPackage @packageArgs
