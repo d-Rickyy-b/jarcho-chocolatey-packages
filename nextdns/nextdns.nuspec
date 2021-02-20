@@ -13,8 +13,12 @@
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <authors>NextDNS Inc.</authors>
     <projectUrl>https://nextdns.io/</projectUrl>
-    <docsUrl>https://help.nextdns.io/en/</docsUrl>
+    <docsUrl>https://help.nextdns.io/</docsUrl>
     <copyright>2019-2020 NextDNS Inc.</copyright>
+    <licenseUrl>https://raw.githubusercontent.com/nextdns/windows/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/nextdns/windows</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/nextdns/windows/issues</bugTrackerUrl>
     <tags>nextdns dns doh</tags>
     <summary>System wide DNS proxy for the NextDNS service.</summary>
     <description>The NextDNS client runs in the background to manage your connection to the NextDNS service. It provides a system-wide DNS proxy affecting all lookups on the machine.</description>
