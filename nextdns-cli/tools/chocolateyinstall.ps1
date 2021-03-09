@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32      = 'https://github.com/nextdns/nextdns/releases/download/v1.10.1/nextdns_1.10.1_windows_386.zip'
-$checksum32 = '86130da8dfcee74ba4542fcc27254f48b234425bf9fb0b777cd4c372d23673f1'
-$url64      = 'https://github.com/nextdns/nextdns/releases/download/v1.10.1/nextdns_1.10.1_windows_amd64.zip'
-$checksum64 = '0c56ba4f404e5eb96dc0dae8f7e1e887907c9722a1bc8b662ea7c597258a805a'
+$url32      = 'https://github.com/nextdns/nextdns/releases/download/v1.11.0/nextdns_1.11.0_windows_386.zip'
+$checksum32 = 'ece4df68d6cf5a1adc4e4a21473f2d74c33420cb673172dfa77dc44203dbdbb2'
+$url64      = 'https://github.com/nextdns/nextdns/releases/download/v1.11.0/nextdns_1.11.0_windows_amd64.zip'
+$checksum64 = '71a2d0252e31017eb06fc988e72f40e3e646b8649fc271a88bf1a92577b470b9'
 
 $packageArgs = @{
   packageName    = 'nextdns-cli'
