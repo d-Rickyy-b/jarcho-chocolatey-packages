@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $url32 = 'https://protonmail.com/download/bridge/Bridge-Installer.exe'
-$checksum32 = '728eb6cbd162f73d4d099132ab0424a8fb87b5bf2b5e249bcf1e411c94a6a0f1'
+$checksum32 = '8293c817ad62e6e88f5ef441013e017f0ce5b7cc2895961c8c0b35e6e3823fea'
 
 $packageArgs = @{
     packageName    = 'protonmailbridge'
