@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
-$url32 = 'https://github.com/WerWolv/ImHex/releases/download/v1.7.0/Windows.Portable.ZIP.zip'
-$checksum32 = 'f6cb6edb539d1144e3cdfa9d002ac886524415c945e0085aca01ecf955c570a1'
+$url32 = 'https://github.com/WerWolv/ImHex/releases/download/v1.10.1/Windows.Portable.ZIP.zip'
+$checksum32 = 'e005453b8cb431d4d364516f23b367a137c5775b9b0a1bfbd0de932cde99ccf6'
 
 $installArgs = @{
     packageName   = 'imhex'
