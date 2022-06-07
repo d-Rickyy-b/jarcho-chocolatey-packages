@@ -12,8 +12,8 @@
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <authors>Proton Technologies AG.</authors>
-    <projectUrl>https://protonmail.com/bridge/</projectUrl>
-    <docsUrl>https://protonmail.com/bridge/faq</docsUrl>
+    <projectUrl>https://proton.me/mail/bridge</projectUrl>
+    <docsUrl>https://proton.me/support/mail</docsUrl>
     <copyright>2018-2020 Proton Technologies AG.</copyright>
     <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.en.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
