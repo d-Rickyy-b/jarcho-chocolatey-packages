@@ -2,7 +2,7 @@ Import-Module au
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri 'https://github.com/WerWolv/ImHex/releases' -UseBasicParsing
-    $url32 = $download_page.links | ? href -Match 'Windows.Portable.ZIP.zip$' | select -First 1 -expand href
+    $url32 = $download_page.links | ? href -Match 'Windows.Portable.zip$' | select -First 1 -expand href
     "$url32" -Match '/v(?<version>.*)/'
     return @{
         Version = $matches['version']
