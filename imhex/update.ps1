@@ -1,12 +1,23 @@
 Import-Module au
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri 'https://github.com/WerWolv/ImHex/releases' -UseBasicParsing
-    $url32 = $download_page.links | ? href -Match 'Windows.Portable.zip$' | select -First 1 -expand href
-    "$url32" -Match '/v(?<version>.*)/'
+    $response = Invoke-WebRequest "https://api.github.com/repos/WerWolv/ImHex/releases"
+    $releases = $response | ConvertFrom-Json
+    $latest_release = $releases | Where-Object {$_.prerelease -eq $false} | select -First 1
+
+    $version = $latest_release.tag_name.TrimStart("v")
+
+    foreach ($asset in $latest_release.assets) {
+        $windows_asset = $asset | ? name -Match 'Windows-Portable(-x86_64)?\.zip'
+        if ($windows_asset) {
+            $download_url = $windows_asset.browser_download_url
+            break
+        }
+    }
+    
     return @{
-        Version = $matches['version']
-        URL32   = "https://github.com$url32"
+        Version = $version
+        URL32   = $download_url
     }
 }
 
