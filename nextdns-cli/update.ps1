@@ -1,14 +1,28 @@
 import-module au
 
 function global:au_GetLatest {
-  $download_page = Invoke-WebRequest -Uri 'https://github.com/nextdns/nextdns/releases' -UseBasicParsing
-  $url32     = $download_page.links | ? href -match '_windows_386.zip$' | select -First 1 -expand href
-  $url64     = $download_page.links | ? href -match '_windows_amd64.zip$' | select -First 1 -expand href
-  (Split-Path -Path "$url32" -Leaf) -match 'nextdns_(?<version>.*)_windows_'
+  $response = Invoke-WebRequest "https://api.github.com/repos/nextdns/nextdns/releases"
+  $releases = $response | ConvertFrom-Json
+  $latest_release = $releases | Where-Object { $_.prerelease -eq $false } | Select-Object -First 1
+
+  $version = $latest_release.tag_name.TrimStart("v")
+
+  foreach ($asset in $latest_release.assets) {
+    $asset_32 = $asset | Where-Object name -Match '_windows_386.zip$'
+    $asset_64 = $asset | Where-Object name -Match '_windows_amd64.zip$'
+
+    if ($asset_32) {
+      $download_url_32 = $asset_32.browser_download_url
+    }
+    if ($asset_64) {
+      $download_url_64 = $asset_64.browser_download_url
+    }
+  }
+
   return @{
-    Version = $matches['version']
-    URL32 = "https://github.com$url32"
-    URL64 = "https://github.com$url64"
+    Version = $version
+    URL32   = $download_url_32
+    URL64   = $download_url_64
   }
 }
 
