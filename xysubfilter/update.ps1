@@ -1,14 +1,28 @@
 import-module au
 
 function global:au_GetLatest {
-  $download_page = Invoke-WebRequest -Uri 'https://github.com/Cyberbeing/xy-VSFilter/releases' -UseBasicParsing
-  $url32     = $download_page.links | ? href -match '_x86.zip$' | select -First 1 -expand href
-  $url64     = $download_page.links | ? href -match '_x64.zip$' | select -First 1 -expand href
-  (Split-Path -Path "$url32" -Leaf) -match 'XySubFilter_(?<version>.*)_'
+  $response = Invoke-WebRequest "https://api.github.com/repos/Cyberbeing/xy-VSFilter/releases"
+  $releases = $response | ConvertFrom-Json
+  $latest_release = $releases | Where-Object { $_.prerelease -eq $false } | Select-Object -First 1
+
+  $version = $latest_release.tag_name.TrimStart("v")
+
+  foreach ($asset in $latest_release.assets) {
+    $asset32 = $asset | Where-Object name -Match '_x86.zip$'
+    $asset64 = $asset | Where-Object name -Match '_x64.zip$'
+      
+    if ($asset32) {
+      $download_url_32 = $asset32.browser_download_url
+    }
+    if ($asset64) {
+      $download_url_64 = $asset64.browser_download_url
+    }
+  }
+  
   return @{
-    Version = $matches['version']
-    URL32 = "https://github.com$url32"
-    URL64 = "https://github.com$url64"
+    Version = $version
+    URL32   = $download_url_32
+    URL64   = $download_url_64
   }
 }
 
