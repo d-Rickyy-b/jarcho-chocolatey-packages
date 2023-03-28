@@ -9,12 +9,12 @@ function global:au_GetLatest {
 
   foreach ($asset in $latest_release.assets) {
     $asset_32 = $asset | Where-Object name -Match '_x32.zip$'
-    $asset_32 = $asset | Where-Object name -Match '_x64.zip$'
+    $asset_64 = $asset | Where-Object name -Match '_x64.zip$'
     if ($asset_32) {
-      $download_url_32 = $windows_asset.browser_download_url
+      $download_url_32 = $asset_32.browser_download_url
     }
     if ($windows_asset) {
-      $download_url_64 = $windows_asset.browser_download_url
+      $download_url_64 = $asset_64.browser_download_url
     }
   }
   
